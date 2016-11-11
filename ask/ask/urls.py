@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls.defaults import *
 
-"""from django.conf.urls import patterns, include, url"""
-
+from django.conf.urls import url                                                
 from django.contrib import admin
+
 admin.autodiscover()
 
 urlpatterns = [
