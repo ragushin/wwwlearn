@@ -17,5 +17,19 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'/login/', 'test'),
+    url(r'/signup/', 'test'),
+    url(r'/question/<123>/', 'test'),
+    url(r'/ask/', 'test'),
+    url(r'/popular/', 'test'),
+    url(r'/new/', 'test'),
+    url(r'/new/', 'test'),
 ]
+"""
+/
+/login/
+/signup/
+/question/<123>/    # вместо <123> - произвольный ID
+/ask/
+/popular/
+/new/"""
