@@ -8,15 +8,15 @@ Class Question(models.Model):
   text=models.TextField()
   added_at=models.DateField()
   rating=models.IntegerField()
-  author=models.CharField()
-  likes=models.TextField()
+  author=models.ForeignKey(User)
+  likes=models.ManyToManyField(User)
 
   
 Class Answer(models.Model):
   text=models.TextField()
   added_at=models.DateField()
   question=models.CharField()
-  author=models.CharField()
+  author=models.ForeignKey(User)
   
   
 class QuestionManager(models.Manager):                                          
