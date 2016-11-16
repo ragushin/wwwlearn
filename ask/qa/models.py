@@ -9,6 +9,7 @@ class QuestionManager(models.Manager):
   
   
 class Question(models.Model):
+
   objects=QuestionManager()
   title=models.CharField(max_length=255,null=True)
   text=models.TextField(null=True)
