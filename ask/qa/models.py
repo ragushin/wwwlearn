@@ -22,7 +22,7 @@ class Question(models.Model):
 class Answer(models.Model):
   text=models.TextField(null=True)
   added_at=models.DateField(null=True)
-  question=models.CharField(max_length=255,null=True)
+  question=models.ForeignKey(Question)
   author=models.ForeignKey(User)
 
   
