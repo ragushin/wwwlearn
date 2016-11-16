@@ -1,3 +1,6 @@
+sudo /etc/init.d/mysql start
+mysql -u root -e "CREATE DATABASE box_django;"
+
 sudo rm -r /etc/nginx/sites-enabled/default
 ln -s /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/default
 sudo /etc/init.d/nginx restart
