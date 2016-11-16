@@ -8,8 +8,7 @@ class QuestionManager(models.Manager):
     pass 
 
 class Question(models.Model):
-  objects = QuestionManager() 
-  
+  objects=QuestionManager()
   title=models.CharField(max_length=255,null=True)
   text=models.TextField(null=True)
   added_at=models.DateField(null=True)
