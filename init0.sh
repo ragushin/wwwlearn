@@ -1,2 +1,2 @@
-virtualenv --python=/usr/bin/python3.4 web/myvenv 
-web/myvenv source web/myvenv/bin/activate
+sudo /etc/init.d/mysql start
+mysql -u root -e "CREATE DATABASE box_django;"
