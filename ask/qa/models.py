@@ -26,8 +26,3 @@ class Answer(models.Model):
   author=models.ForeignKey(User)
 
   
-class QuestionManager(models.Manager):                                          
-  def new():                                                              
-    pass                                                            
-  def popular():                                                          
-    pass 
